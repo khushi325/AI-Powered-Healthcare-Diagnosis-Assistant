@@ -46,7 +46,7 @@ if "prediction_count" not in st.session_state:
 
 MODEL_PATH = "Saved_Models/logistic_regression.pkl"
 ENCODER_PATH = "Saved_Models/label_encoder.pkl"
-FEATURE_PATH = "Processed_Data/feature_names.pkl"
+FEATURE_PATH = "Saved_Models/feature_names.pkl"
 
 required_files = {
     "Model": MODEL_PATH,
