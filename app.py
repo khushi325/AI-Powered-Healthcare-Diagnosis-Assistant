@@ -457,9 +457,11 @@ elif page == "🩺 Disease Prediction":
     if predict_button:
 
         # Check if user selected symptoms
-        if len(selected_symptoms) == 0:
+        # Check minimum symptoms
+        if len(selected_symptoms) < 4:
 
-            st.warning("⚠️ Please select at least one symptom.")
+         st.warning("⚠️ Please select at least 4 symptoms for a more reliable prediction.")
+         st.stop()
 
         else:
 
@@ -489,6 +491,11 @@ elif page == "🩺 Disease Prediction":
             predicted_disease = label_encoder.inverse_transform(
                 prediction
             )[0]
+
+            # Prediction Probability
+            #probabilities = model.predict_proba(input_df)[0]
+
+            #confidence = np.max(probabilities) * 100
 
             # ====================================================
             # Prediction Probability
@@ -534,6 +541,8 @@ elif page == "🩺 Disease Prediction":
                 """,
                 unsafe_allow_html=True
             )
+
+            #st.info(f"🎯 Prediction Confidence: {confidence:.2f}%")
 
             st.success("✅ Prediction Completed Successfully!")
 
