@@ -28,6 +28,7 @@ An AI-powered web application built using Machine Learning and Google Gemini AI 
 - ReportLab
 - Pandas
 - NumPy
+- PowerBi
 
 ## Installation
 
