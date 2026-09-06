@@ -4,5 +4,9 @@ __pycache__/
 .venv/
 .vscode/
 Dataset/
+<<<<<<< HEAD
 Processed_Data/
 *.csv
+=======
+Processed_Data/
+>>>>>>> 870a6982898855d0dbd70c80d9854d4adf2bdba2
