@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+.vscode/
+Dataset/
+Processed_Data/
+*.csv
